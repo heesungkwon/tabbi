@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "docs",
+  "rewrites": [
+    {
+      "source": "/api/agent",
+      "destination": "https://tabbi.next-interfa-7230.chatgpt.site/api/agent"
+    }
+  ]
+}

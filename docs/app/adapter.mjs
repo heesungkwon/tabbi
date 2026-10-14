@@ -1,6 +1,6 @@
 import { cleanTabs, safeUrl } from './engine.mjs';
 export const isExtension = globalThis.location?.protocol === 'chrome-extension:' && !!globalThis.chrome?.tabs;
-export const DEFAULT_ENDPOINT = 'https://dasi-tab-workspaces.next-interfa-7230.chatgpt.site';
+export const DEFAULT_ENDPOINT = 'https://tabbi.next-interfa-7230.chatgpt.site';
 const browserStore=()=>new URLSearchParams(globalThis.location?.search||'').has('preview')?sessionStorage:localStorage;
 export async function readState() {
   if (isExtension) return (await chrome.storage.local.get('dasi')).dasi;

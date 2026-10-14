@@ -17,6 +17,7 @@ const when=date=>new Intl.DateTimeFormat(state.lang==='ko'?'ko-KR':'en-US',{mont
 const app=document.querySelector('#app');
 let state=(await readState())||{version:1,lang:'ko',tasks:initialTasks(),events:[],settings:{ai:true,endpoint:DEFAULT_ENDPOINT},source:'sample',tabs:structuredClone(demoTabs)};
 if(!Array.isArray(state.tasks)||!Array.isArray(state.tabs)){state={version:1,lang:'ko',tasks:initialTasks(),events:[],settings:{ai:true,endpoint:DEFAULT_ENDPOINT},source:'sample',tabs:structuredClone(demoTabs)};}
+if(state.settings?.endpoint==='https://dasi-tab-workspaces.next-interfa-7230.chatgpt.site')state.settings.endpoint=DEFAULT_ENDPOINT;
 state.events ||= [];state.chat ||= [];delete state.settings?.baseline;state.settings||={ai:true,endpoint:DEFAULT_ENDPOINT};
 if(!state.settings.tabbiV4){state.settings.ai=true;state.settings.endpoint=DEFAULT_ENDPOINT;state.settings.tabbiV4=true;}
 initConversations(state);

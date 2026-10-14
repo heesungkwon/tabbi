@@ -2,8 +2,8 @@
 
 열린 탭을 목적별로 정리하고 대화로 보관한 탭을 다시 여는 프로토타입입니다.
 
-- [프로토타입 바로 사용하기](https://heesungkwon.github.io/tabbi-prototype/)
-- [기존 공개 서버](https://dasi-tab-workspaces.next-interfa-7230.chatgpt.site/app/)
+- [프로토타입 바로 사용하기](https://heesungkwon.github.io/tabbi/)
+- [기존 공개 서버](https://tabbi.next-interfa-7230.chatgpt.site/app/)
 
 로그인·설치 없이 샘플 탭이나 직접 추가한 링크로 사용할 수 있습니다. 실제 크롬 탭 제어는 화면의 확장 프로그램 다운로드를 이용합니다.
 
