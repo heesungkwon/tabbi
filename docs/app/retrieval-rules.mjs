@@ -1,4 +1,4 @@
-const paper=t=>/doi\.org|arxiv\.org|scholar\.|\bpaper\b|\bCHI\b|\bUIST\b|논문|학술/i.test(`${t.title} ${t.url}`);
+const paper=t=>/doi\.org|arxiv\.org|scholar\.|microsoft\.com\/en-us\/research\/publication\/|\bpaper\b|\bCHI\b|\bUIST\b|논문|학술/i.test(`${t.title} ${t.url}`);
 const docs=t=>/developer\.|developers\.|docs\.|\/docs\/|\bAPI\b|documentation|building agents|개발\s*문서|구현\s*문서/i.test(`${t.title} ${t.url}`);
 const find=(tasks,m)=>tasks.find(t=>t.id===m.taskId)?.tabs.find(t=>t.id===m.tabId);
 export function retrievalConstraints(messages){
@@ -22,7 +22,7 @@ export function constrainRetrieval(result,tasks,messages,lang='ko'){
 }
 // Straightforward narrowing can be applied to the previous candidates without another model call.
 export function refinePrevious(chat,tasks,text,lang='ko'){
- if(!/^(?:논문만(?:\s*(?:보여줘|찾아줘|남겨줘))?|only papers|papers only|(?:개발|구현)\s*문서(?:는|를)?\s*(?:빼줘|제외해줘)|(?:exclude|remove)\s+(?:the\s+)?(?:developer|api|implementation)\s*(?:docs|documentation))[.!?\s]*$/i.test(text.trim()))return null;
+ if(!/^(?:논문만(?:\s*(?:보여줘|찾아줘|남겨줘|보자))?|only papers|papers only|(?:개발|구현)\s*문서(?:는|를)?\s*(?:빼줘|제외해줘)|(?:exclude|remove)\s+(?:the\s+)?(?:developer|api|implementation)\s*(?:docs|documentation))[.!?\s]*$/i.test(text.trim()))return null;
  const previous=[...chat].reverse().find(m=>m.role==='assistant'&&m.matches?.length);
  if(!previous)return null;
  const messages=chat.filter(m=>m.role==='user').concat({role:'user',text});
