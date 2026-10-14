@@ -1,0 +1,160 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.740
+TABBI helps people organize browser tabs,
+
+00:00:03.210 --> 00:00:04.950
+and return to the materials they need.
+
+00:00:05.680 --> 00:00:07.590
+As we switch between multiple tasks,
+
+00:00:07.830 --> 00:00:09.530
+browser tabs keep accumulating.
+
+00:00:10.070 --> 00:00:11.670
+We leave them open to read later,
+
+00:00:11.870 --> 00:00:14.930
+remember unfinished work, or avoid losing useful materials.
+
+00:00:15.390 --> 00:00:20.200
+But without organization, we can forget why we opened a page, or what we intended to do with it.
+
+00:00:20.970 --> 00:00:23.040
+The goal is not simply to close tabs.
+
+00:00:23.290 --> 00:00:24.840
+It is to group them by purpose,
+
+00:00:25.120 --> 00:00:27.730
+while keeping the links and context that help us return.
+
+00:00:28.220 --> 00:00:29.820
+TABBI connects two activities:
+
+00:00:30.210 --> 00:00:31.850
+organizing and saving tabs,
+
+00:00:32.050 --> 00:00:33.730
+then finding and reopening them.
+
+00:00:34.400 --> 00:00:37.500
+Saved task names, links, and notes connect the two.
+
+00:00:37.955 --> 00:00:39.715
+Here is the actual Chrome extension.
+
+00:00:39.955 --> 00:00:41.695
+It reads the tabs in the current window.
+
+00:00:42.235 --> 00:00:45.205
+The user describes their work and requests organization.
+
+00:00:45.915 --> 00:00:50.515
+TABBI suggests task groups based on tab titles, links, and saved tasks.
+
+00:00:50.810 --> 00:00:52.550
+The user reviews these suggestions,
+
+00:00:52.770 --> 00:00:55.530
+renames a group, and moves tabs between tasks.
+
+00:00:55.950 --> 00:00:59.680
+They can add materials to an existing task or keep them as a new task.
+
+00:01:00.380 --> 00:01:01.486
+The proposal remains editable.
+
+00:01:01.496 --> 00:01:03.936
+A note can record what to do next.
+
+00:01:04.536 --> 00:01:07.826
+The user saves the selected tasks before closing their tabs.
+
+00:01:08.286 --> 00:01:09.576
+Other tabs remain open.
+
+00:01:10.220 --> 00:01:13.420
+Later, the user asks for saved tabs about Generative UI.
+
+00:01:13.790 --> 00:01:18.030
+TABBI recommends matching pages and asks whether to focus on papers or include
+
+00:01:18.040 --> 00:01:19.540
+workshop materials and notes.
+
+00:01:20.240 --> 00:01:23.410
+The user can choose a suggested option or add a condition.
+
+00:01:23.620 --> 00:01:26.190
+Here, the user asks to see only papers.
+
+00:01:26.500 --> 00:01:27.860
+TABBI narrows the results.
+
+00:01:28.270 --> 00:01:30.790
+The user selects the relevant pages and opens them.
+
+00:01:31.250 --> 00:01:33.070
+These are the actual saved pages,
+
+00:01:33.270 --> 00:01:35.390
+rather than a simulated restored list.
+
+00:01:35.690 --> 00:01:37.240
+The workflow starts with open tabs.
+
+00:01:37.250 --> 00:01:40.530
+The model suggests groups, and the user reviews and saves them.
+
+00:01:40.990 --> 00:01:43.870
+Task names, links, and notes preserve the context.
+
+00:01:44.390 --> 00:01:48.230
+When the user returns, the agent uses that context to interpret their purpose,
+
+00:01:48.440 --> 00:01:51.490
+asks a question if needed, and updates its recommendation.
+
+00:01:52.020 --> 00:01:53.640
+The user chooses what to reopen.
+
+00:01:54.240 --> 00:01:57.470
+All three participants responded positively to automatic grouping.
+
+00:01:58.070 --> 00:02:01.370
+They valued suggestions when they were unsure how to organize their materials,
+
+00:02:01.690 --> 00:02:04.580
+and appreciated being able to review and edit the groups.
+
+00:02:04.930 --> 00:02:07.620
+But agent assistance was not preferred in every situation.
+
+00:02:08.400 --> 00:02:12.260
+Participant one found that browsing the list helped rediscover forgotten materials.
+
+00:02:12.850 --> 00:02:15.620
+Conversation required remembering what they wanted to find.
+
+00:02:16.120 --> 00:02:20.440
+Participant two used a broad goal, planning a trip, and appreciated suggestions for
+
+00:02:20.450 --> 00:02:21.700
+maps and AI tools.
+
+00:02:22.310 --> 00:02:25.430
+Participant three preferred direct browsing with fewer than ten tabs,
+
+00:02:25.850 --> 00:02:28.020
+and saw repeated questions as extra work.
+
+00:02:28.730 --> 00:02:31.230
+Suggested buttons could still provide useful options.
+
+00:02:31.820 --> 00:02:34.360
+The lesson is to offer agent assistance when it helps,
+
+00:02:34.660 --> 00:02:36.568
+and direct access when it is simpler. Thank you.
