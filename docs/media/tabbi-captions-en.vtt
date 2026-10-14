@@ -1,0 +1,154 @@
+WEBVTT
+
+00:00:00.700 --> 00:00:05.541
+Meet Tabby, a browser assistant that helps people organize their tabs and return to the
+
+00:00:05.541 --> 00:00:06.509
+materials they need.
+
+00:00:08.700 --> 00:00:12.801
+We open tabs to compare ideas, plan a trip, or collect references.
+
+00:00:12.801 --> 00:00:14.509
+Then another task interrupts us.
+
+00:00:14.509 --> 00:00:20.319
+The tabs stay open, because they hold useful materials and remind us of work we have not
+
+00:00:20.319 --> 00:00:20.661
+finished.
+
+00:00:24.700 --> 00:00:28.336
+Keeping everything open makes it harder to find the right page.
+
+00:00:28.336 --> 00:00:31.641
+But closing everything can feel like losing the task itself.
+
+00:00:31.641 --> 00:00:34.616
+The problem is not simply the number of tabs.
+
+00:00:34.616 --> 00:00:37.260
+It is keeping useful context while reducing clutter.
+
+00:00:42.700 --> 00:00:46.019
+What if an agent could help with both sides?
+
+00:00:46.019 --> 00:00:49.338
+Tabby connects task based organization with purpose based retrieval.
+
+00:00:49.338 --> 00:00:54.870
+It saves task names, links, and notes, then uses that context when the user returns.
+
+00:00:56.700 --> 00:00:58.533
+Here is the working prototype.
+
+00:00:58.533 --> 00:01:02.565
+On the web, users can paste links or load sample data.
+
+00:01:02.565 --> 00:01:06.231
+The Chrome extension reads tabs from the current browser window.
+
+00:01:06.231 --> 00:01:09.896
+In this example, the materials cover research, travel, and design.
+
+00:01:14.700 --> 00:01:19.116
+The user describes what these tabs are for and requests organization.
+
+00:01:19.116 --> 00:01:23.933
+The model proposes task groups using titles, addresses, and existing saved tasks.
+
+00:01:23.933 --> 00:01:25.538
+These are editable suggestions.
+
+00:01:25.538 --> 00:01:31.158
+The user can move tabs, change a group's name, or choose an existing task.
+
+00:01:31.158 --> 00:01:33.567
+Ambiguous materials remain available for review.
+
+00:01:36.700 --> 00:01:39.468
+A short note captures why these materials matter.
+
+00:01:39.468 --> 00:01:43.273
+The user then chooses to save only, or save and close.
+
+00:01:43.273 --> 00:01:45.695
+The web demo clears its working list.
+
+00:01:45.695 --> 00:01:49.154
+The extension closes the selected browser tabs after saving them.
+
+00:01:52.700 --> 00:01:57.396
+Later, the user returns with a purpose, rather than an exact page title.
+
+00:01:57.396 --> 00:02:00.647
+A vague request leads to a short clarifying question.
+
+00:02:00.647 --> 00:02:06.065
+Once the purpose is clear, Tabby connects it to saved tasks and recommends relevant tabs.
+
+00:02:06.065 --> 00:02:09.678
+Here, the goal is preparing a presentation about tab management.
+
+00:02:12.700 --> 00:02:15.891
+The first recommendation includes papers and implementation documents.
+
+00:02:15.891 --> 00:02:19.082
+The user can narrow it: exclude developer documentation.
+
+00:02:19.082 --> 00:02:22.671
+Tabby keeps the recent conversation and updates the candidates.
+
+00:02:22.671 --> 00:02:25.862
+Simple filtering can happen without another model call.
+
+00:02:25.862 --> 00:02:29.452
+The user stays in control of the final selection.
+
+00:02:30.700 --> 00:02:33.808
+The user selects the remaining tabs and reopens them.
+
+00:02:33.808 --> 00:02:37.261
+In the web prototype, they return to the working list.
+
+00:02:37.261 --> 00:02:40.023
+In Chrome, the extension opens the actual pages.
+
+00:02:42.700 --> 00:02:47.760
+Behind the interaction, the interface sends the request and relevant context to the
+
+00:02:47.760 --> 00:02:48.149
+server.
+
+00:02:48.149 --> 00:02:52.042
+The model returns groups or recommendations in a structured format.
+
+00:02:52.042 --> 00:02:55.156
+Tabby checks the referenced tabs before showing them.
+
+00:02:55.156 --> 00:02:57.491
+User replies refine the next decision.
+
+00:02:57.491 --> 00:03:02.551
+Saving and browser actions happen after user selection, not automatically from the model's
+
+00:03:02.551 --> 00:03:02.940
+suggestion.
+
+00:03:04.700 --> 00:03:06.570
+Three people tried the prototype.
+
+00:03:06.570 --> 00:03:11.804
+Their feedback was generally positive, but they did not prefer agent assistance in every
+
+00:03:11.804 --> 00:03:12.178
+situation.
+
+00:03:14.700 --> 00:03:20.330
+With few tabs, or a clearly known target, the agent was unnecessary and could add noise.
+
+00:03:20.330 --> 00:03:21.738
+Direct access still matters.
+
+00:03:24.700 --> 00:03:28.206
+Tabby helps people return to their work, with the tabs they need.
